@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lanp-culture-media.ceruleancreek2.chatgpt.site/sitemap.xml
