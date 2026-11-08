@@ -1,115 +1,364 @@
 <!doctype html>
-<html lang="zh-CN" data-type="service" data-radius="soft" data-buttons="solid" data-motion>
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>LANP 文化传媒｜四川文化传媒公会</title>
-  <meta name="description" content="LANP 文化传媒成立于 2021 年，立足四川，以成员为中心，专注娱乐与文化内容，在创作中坚持品质与创新。">
-  <meta name="page-type" content="service">
-  <meta name="site-kind" content="other">
-  <meta name="theme-color" content="#c3d7e5">
+  <title>LANP 文化传媒｜让热爱，走到聚光灯下</title>
+  <meta name="description" content="LANP 文化传媒有限公司成立于 2021 年，扎根四川，是专注文化传媒的公会。连接创作者与观众，以内容与创意探索多元的娱乐表达。">
+  <meta name="theme-color" content="#090807">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://zovop.github.io/lanp-official/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="LANP 文化传媒｜一起创作，一起成长">
-  <meta property="og:description" content="成立于 2021 年的四川文化传媒公会。以成员为中心，让创作拥有更多可能。">
-  <meta property="og:image" content="https://lanp-culture-media.ceruleancreek2.chatgpt.site/assets/img/stage.webp">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="LANP 文化传媒">
+  <meta property="og:title" content="LANP 文化传媒｜让热爱，走到聚光灯下">
+  <meta property="og:description" content="扎根四川，连接创作者与观众。LANP 以内容与创意，探索更多元的娱乐表达。">
+  <meta property="og:url" content="https://zovop.github.io/lanp-official/">
+  <meta property="og:image" content="https://zovop.github.io/lanp-official/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="LANP 文化传媒。近黑背景上的电光橙光环，标题是：让热爱，走到聚光灯下。">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://lanp-culture-media.ceruleancreek2.chatgpt.site/">
+  <meta name="twitter:title" content="LANP 文化传媒｜让热爱，走到聚光灯下">
+  <meta name="twitter:description" content="扎根四川，连接创作者与观众。LANP 以内容与创意，探索更多元的娱乐表达。">
+  <meta name="twitter:image" content="https://zovop.github.io/lanp-official/og.png">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/system.css">
-  <link rel="stylesheet" href="assets/ui/cards.css">
-  <link rel="stylesheet" href="assets/motion/motion.css">
-  <link rel="stylesheet" href="assets/layout/layout.css">
-  <link rel="stylesheet" href="assets/moments/word-highlight/moment.css">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="fonts/noto-serif-sc.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
-  <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
-  <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
-  <link rel="modulepreload" href="assets/moments/moments.js">
-  <link rel="modulepreload" href="assets/moments/lib.js">
-  <link rel="modulepreload" href="assets/moments/word-highlight/moment.js">
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add("js");
+      try {
+        if (matchMedia("(prefers-reduced-motion: reduce)").matches) root.classList.add("reduce");
+      } catch (error) {}
+    })();
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "LANP 文化传媒有限公司",
+      "alternateName": "LANP",
+      "foundingDate": "2021",
+      "description": "专注文化传媒的公会，提供娱乐与文化内容。",
+      "url": "https://zovop.github.io/lanp-official/",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "四川",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "四川",
+          "addressCountry": "CN"
+        }
+      }
+    }
+  </script>
 </head>
 <body>
-<!-- service; palette swap-pastels: cool blue echoes stage light; Red Hat / Chinese system sans;
-     hero film (still photography, no supplied video); nav centre; footer columns; close type;
-     moment word-highlight in #belief; no WebGL or looping media. Photographs are licensed editorial stand-ins. -->
-<header class="nav nav--centre">
-  <div class="wrap nav__bar">
+  <header class="nav">
     <a class="skip-link" href="#top">跳至正文</a>
-    <a class="nav__logo brand" href="#top" aria-label="LANP 文化传媒，返回首页"><span class="brand__name">LANP<span class="brand__dot">.</span></span></a>
-    <nav class="nav__links" aria-label="主导航">
-      <div class="nav__item"><a class="nav__link" href="#about">关于 LANP</a></div>
-      <div class="nav__item"><a class="nav__link" href="#content">内容方向</a></div>
-      <div class="nav__item"><a class="nav__link" href="#belief">公会理念</a></div>
-      <div class="nav__item"><a class="nav__link" href="#contact">合作联系</a></div>
-    </nav>
-    <div class="nav__actions"><a class="btn btn--primary" href="#contact">加入公会<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a></div>
-    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="打开导航菜单"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
-  </div>
-</header>
-<main id="top">
-  <section class="hero hero--film" data-enter aria-labelledby="hero-h">
-    <div class="wrap"><div class="hero-text hero__in">
-      <div class="hero__media hero__fill">
-        <img src="assets/img/stage.webp" srcset="assets/img/stage-480.webp 480w, assets/img/stage-720.webp 720w, assets/img/stage.webp 1800w" sizes="(max-width:639px) calc(100vw - 48px), (max-width:1023px) calc(100vw - 96px), calc(100vw - 160px)" alt="舞台灯光中，一位背向镜头的表演者举起手臂" width="1800" height="1200" fetchpriority="high" data-source="library" data-subject="entertainment">
-        <span class="hero-wordmark" aria-hidden="true">LANP.</span>
-        <div class="hero__over"><div class="hero-copy">
-          <h1 id="hero-h">四川的<br>文化传媒公会</h1>
-          <p class="hero__lead">成立于 2021 年，总部位于四川。<br class="desktop-br">以成员为中心，创作多元的娱乐与文化内容。</p>
-          <div class="btn-row"><a class="btn btn--primary" href="#contact">加入公会<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a><a class="btn btn--secondary" href="#about">了解 LANP</a></div>
-        </div></div>
-      </div>
-    </div></div>
-  </section>
-  <section class="section about-section" id="about" aria-labelledby="about-h">
-    <div class="wrap">
-      <div class="section-head"><h2 id="about-h">始于四川，<br>相聚在创作之中。</h2></div>
-      <div class="grid about-grid">
-        <div class="span-6 about-copy">
-          <p class="about-year">2021<span>年成立</span></p>
-          <p class="body-copy">LANP 文化传媒有限公司是一家专注于文化传媒领域的公会，总部位于四川。</p>
-          <p class="body-copy">我们因共同的热爱聚在一起。团队充满创造力与激情，在娱乐与文化内容的创作中，持续探索新的表达。</p>
-          <a class="link" href="#belief">阅读公会理念</a>
+    <div class="nav-bar">
+      <a class="brand" href="#top" aria-label="LANP 文化传媒，返回首页">LANP<span aria-hidden="true">.</span></a>
+      <nav class="nav-links" id="nav-panel" aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#create">内容</a>
+        <a href="#works">视觉</a>
+        <a href="#growth">理念</a>
+        <a href="#join">加入</a>
+        <a href="#partner">合作</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel">
+        <span class="nav-toggle-lines" aria-hidden="true"></span>
+        <span class="sr-only">打开导航菜单</span>
+      </button>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="stage" id="stage" aria-hidden="true">
+        <div class="stage-parallax">
+          <div class="stage-glow"></div>
+          <div class="stage-floor"></div>
+          <svg class="stage-rings" viewBox="0 0 1000 1000">
+            <defs>
+              <linearGradient id="heat" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffd0b8" stop-opacity="0.2"/>
+                <stop offset="0.45" stop-color="#ff4b1f"/>
+                <stop offset="1" stop-color="#ff4b1f" stop-opacity="0.08"/>
+              </linearGradient>
+            </defs>
+            <ellipse class="ring-axis" cx="500" cy="470" rx="210" ry="74"/>
+            <circle class="core-haze" cx="500" cy="470" r="54"/>
+            <circle class="core-hot" cx="500" cy="470" r="7"/>
+            <g class="spin-a">
+              <ellipse class="ring-hot-soft" cx="500" cy="470" rx="270" ry="100" transform="rotate(-16 500 470)"/>
+              <ellipse class="ring-hot" cx="500" cy="470" rx="270" ry="100" transform="rotate(-16 500 470)"/>
+              <circle cx="759.5" cy="395.6" r="1.4"/><circle cx="745.8" cy="444.7" r="2.4"/><circle cx="709.0" cy="480.8" r="1.8"/>
+              <circle cx="653.6" cy="516.0" r="2.6"/><circle cx="584.6" cy="547.2" r="1.7"/><circle cx="508.1" cy="571.4" r="2.5"/>
+              <circle cx="430.8" cy="586.7" r="1.6"/><circle cx="359.7" cy="591.6" r="2.4"/><circle cx="301.1" cy="585.6" r="1.8"/>
+              <circle cx="260.1" cy="569.4" r="2.5"/><circle cx="240.5" cy="544.4" r="1.6"/><circle cx="243.9" cy="512.8" r="2.3"/>
+              <circle cx="270.0" cy="477.3" r="1.7"/><circle cx="316.6" cy="441.2" r="2.5"/><circle cx="379.5" cy="407.7" r="1.8"/>
+              <circle cx="453.1" cy="379.7" r="2.4"/><circle cx="530.9" cy="359.7" r="1.6"/><circle cx="605.9" cy="349.5" r="2.5"/>
+              <circle cx="671.5" cy="350.1" r="1.7"/><circle cx="721.9" cy="361.2" r="2.4"/><circle cx="752.5" cy="382.1" r="1.6"/>
+            </g>
+            <g class="spin-b">
+              <ellipse class="ring-cold" cx="512" cy="488" rx="330" ry="78" transform="rotate(22 512 488)"/>
+              <circle cx="803.8" cy="624.6" r="1.5"/><circle cx="733.0" cy="629.7" r="2.2"/><circle cx="618.4" cy="606.8" r="1.6"/>
+              <circle cx="482.8" cy="560.3" r="2.3"/><circle cx="352.9" cy="499.5" r="1.7"/><circle cx="254.6" cy="436.4" r="2.2"/>
+              <circle cx="207.2" cy="383.6" r="1.5"/><circle cx="249.0" cy="345.2" r="2.1"/><circle cx="405.6" cy="369.2" r="1.6"/>
+              <circle cx="541.2" cy="415.7" r="2.2"/><circle cx="671.1" cy="476.5" r="1.6"/><circle cx="769.4" cy="539.6" r="2.1"/>
+            </g>
+          </svg>
         </div>
-        <a class="photo-link span-6 frame frame--photo" href="#content" aria-label="查看 LANP 的内容方向"><img class="frame__img" src="assets/img/microphone.webp" srcset="assets/img/microphone-480.webp 480w, assets/img/microphone-720.webp 720w, assets/img/microphone.webp 1200w" sizes="(max-width:639px) calc(100vw - 48px), (max-width:1023px) calc((100vw - 120px) / 2), calc((100vw - 184px) / 2)" alt="舞台暖光下的话筒特写" width="1200" height="800" loading="lazy" decoding="async" data-source="library" data-subject="audio"></a>
+        <canvas id="stage-canvas" class="stage-canvas" hidden></canvas>
+        <div class="stage-grid"></div>
+        <div class="stage-vignette"></div>
+      </div>
+      <p class="hero-mark" aria-hidden="true">LANP</p>
+      <div class="wrap hero-layout">
+        <div class="hero-copy">
+          <p class="kicker"><span class="lamp" aria-hidden="true"></span>LANP 文化传媒有限公司 · 2021 · 四川</p>
+          <h1 id="hero-title">让热爱，<br>走到聚光灯下</h1>
+          <p class="lede">扎根四川，连接创作者与观众。LANP 以内容与创意，探索更多元的娱乐表达。</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" data-magnet href="#about">认识 LANP</a>
+            <a class="btn btn-ghost" data-magnet href="#join">加入我们</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" data-reveal aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="about-grid">
+          <div>
+            <p class="mega" aria-hidden="true">2021</p>
+            <ul class="facts">
+              <li><span>成立</span><strong>2021</strong></li>
+              <li><span>所在</span><strong>四川</strong></li>
+              <li><span>专注</span><strong>文化传媒</strong></li>
+              <li><span>组织</span><strong>公会</strong></li>
+            </ul>
+          </div>
+          <div class="about-copy section-head">
+            <p class="index-no">01 — 关于</p>
+            <h2 id="about-title">一家扎根四川的<br>文化传媒公会。</h2>
+            <p>LANP 文化传媒有限公司成立于 2021 年。公会专注文化传媒，提供娱乐与文化内容，把成员、品质与创新放在同一件事里。</p>
+            <p>团队带着创造力与激情工作。页面只写已经确认的事，不列举人数、奖项、播放量或合作品牌。</p>
+            <p class="statement">成员、品质、创新。创造力与激情，放在内容里。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="create" data-reveal aria-labelledby="create-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="index-no">02 — 内容</p>
+          <h2 id="create-title">娱乐、文化，与成员共创。</h2>
+          <p class="deck">下面是 LANP 正在探索的内容方向，不是服务价目，也不是已完成项目的清单。</p>
+        </header>
+        <ol class="directions">
+          <li>
+            <span class="num">01</span>
+            <h3>娱乐内容</h3>
+            <p>以舞台、影像和现场感为线索，寻找娱乐内容自己的节奏。</p>
+          </li>
+          <li>
+            <span class="num">02</span>
+            <h3>文化表达</h3>
+            <p>让文化内容落在画面、声音和叙事里，而不是停在口号上。</p>
+          </li>
+          <li>
+            <span class="num">03</span>
+            <h3>成员共创</h3>
+            <p>创作者与成员在同一条创作链上协作。表达是一起完成的。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="works" data-reveal aria-labelledby="works-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="index-no">03 — 视觉</p>
+          <h2 id="works-title">概念视觉</h2>
+          <p class="deck">没有可公开的真实作品。以下五帧是为本站绘制的抽象概念，用来讨论光、舞台与叙事。请勿将其理解为客户案例、成员肖像或活动照片。</p>
+        </header>
+        <div class="gallery-tools">
+          <p>横向浏览</p>
+          <div class="gallery-progress" aria-hidden="true"><span></span></div>
+          <div class="gallery-nav">
+            <button type="button" data-gallery="prev" data-magnet>上一幅</button>
+            <button type="button" data-gallery="next" data-magnet>下一幅</button>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-track" id="gallery-track" role="region" aria-label="概念视觉序列">
+        <article class="plate">
+          <div class="plate-visual">
+            <svg viewBox="0 0 320 220" aria-hidden="true">
+              <ellipse cx="160" cy="112" rx="108" ry="38" fill="none" stroke="#ff4b1f" stroke-width="1.4" transform="rotate(-18 160 112)"/>
+              <ellipse cx="166" cy="118" rx="128" ry="28" fill="none" stroke="#c5ccd6" stroke-width="1" stroke-dasharray="2 6" transform="rotate(16 166 118)"/>
+              <circle cx="160" cy="112" r="5" fill="#ff4b1f"/>
+              <circle cx="250" cy="96" r="2" fill="#f4efe6"/><circle cx="78" cy="132" r="2" fill="#ff4b1f"/><circle cx="196" cy="78" r="1.5" fill="#c5ccd6"/>
+            </svg>
+          </div>
+          <p class="plate-kicker">概念 01</p>
+          <h3>光环</h3>
+          <p>一圈暖光先把空间划开。聚光还没落下。</p>
+          <p class="concept">抽象概念，非案例、非成员、非活动</p>
+        </article>
+        <article class="plate">
+          <div class="plate-visual">
+            <svg viewBox="0 0 320 220" aria-hidden="true">
+              <defs>
+                <linearGradient id="beam-hot" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#ff4b1f" stop-opacity="0"/>
+                  <stop offset="1" stop-color="#ff4b1f"/>
+                </linearGradient>
+              </defs>
+              <polygon points="132,6 156,6 188,176 108,176" fill="url(#beam-hot)"/>
+              <line x1="214" y1="0" x2="196" y2="176" stroke="#c5ccd6" stroke-width="1.5" stroke-opacity="0.8"/>
+              <circle cx="150" cy="184" r="4" fill="#f4efe6"/>
+              <ellipse cx="150" cy="190" rx="46" ry="8" fill="#ff4b1f" opacity="0.35"/>
+            </svg>
+          </div>
+          <p class="plate-kicker">概念 02</p>
+          <h3>光束</h3>
+          <p>冷银切开暗场，注意力被收到中心。</p>
+          <p class="concept">抽象概念，非案例、非成员、非活动</p>
+        </article>
+        <article class="plate">
+          <div class="plate-visual">
+            <svg viewBox="0 0 320 220" aria-hidden="true">
+              <polygon points="160,18 230,150 90,150" fill="#ff4b1f" opacity="0.22"/>
+              <polygon points="160,18 198,150 122,150" fill="#ff4b1f" opacity="0.38"/>
+              <ellipse cx="160" cy="156" rx="92" ry="18" fill="#ff4b1f" opacity="0.45"/>
+              <line x1="36" y1="168" x2="284" y2="168" stroke="#c5ccd6" stroke-opacity="0.4"/>
+            </svg>
+          </div>
+          <p class="plate-kicker">概念 03</p>
+          <h3>舞台</h3>
+          <p>近黑的地面上，只留下被照亮的一块。</p>
+          <p class="concept">抽象概念，非案例、非成员、非活动</p>
+        </article>
+        <article class="plate">
+          <div class="plate-visual">
+            <svg viewBox="0 0 320 220" aria-hidden="true">
+              <g fill="#c5ccd6">
+                <circle cx="64" cy="48" r="1.7" opacity="0.28"/><circle cx="104" cy="48" r="1.7" opacity="0.28"/><circle cx="144" cy="48" r="1.7" opacity="0.28"/><circle cx="184" cy="48" r="1.7" opacity="0.28"/><circle cx="224" cy="48" r="1.7" opacity="0.28"/><circle cx="264" cy="48" r="1.7" opacity="0.28"/>
+                <circle cx="64" cy="84" r="1.8" opacity="0.45"/><circle cx="104" cy="84" r="1.8" opacity="0.45"/><circle cx="144" cy="84" r="1.8" opacity="0.45"/><circle cx="184" cy="84" r="1.8" opacity="0.45"/><circle cx="224" cy="84" r="1.8" opacity="0.45"/><circle cx="264" cy="84" r="1.8" opacity="0.45"/>
+                <circle cx="64" cy="120" r="2.3"/><circle cx="104" cy="120" r="2.5"/><circle cx="144" cy="120" r="3.2" fill="#ff4b1f"/><circle cx="184" cy="120" r="2.5"/><circle cx="224" cy="120" r="2.3"/><circle cx="264" cy="120" r="2.1"/>
+                <circle cx="64" cy="156" r="1.8" opacity="0.45"/><circle cx="104" cy="156" r="1.8" opacity="0.45"/><circle cx="144" cy="156" r="1.8" opacity="0.45"/><circle cx="184" cy="156" r="1.8" opacity="0.45"/><circle cx="224" cy="156" r="1.8" opacity="0.45"/><circle cx="264" cy="156" r="1.8" opacity="0.45"/>
+              </g>
+              <line x1="40" y1="120" x2="280" y2="120" stroke="#ff4b1f" stroke-opacity="0.85"/>
+              <ellipse cx="160" cy="120" rx="78" ry="28" fill="none" stroke="#c5ccd6" stroke-opacity="0.45"/>
+            </svg>
+          </div>
+          <p class="plate-kicker">概念 04</p>
+          <h3>声场</h3>
+          <p>声与光共用一条轴线，内容在中间展开。</p>
+          <p class="concept">抽象概念，非案例、非成员、非活动</p>
+        </article>
+        <article class="plate">
+          <div class="plate-visual">
+            <svg viewBox="0 0 320 220" aria-hidden="true">
+              <rect x="58" y="42" width="150" height="96" fill="none" stroke="#c5ccd6" stroke-opacity="0.55"/>
+              <rect x="92" y="64" width="150" height="96" fill="none" stroke="#f4efe6" stroke-opacity="0.8"/>
+              <rect x="118" y="86" width="150" height="96" fill="none" stroke="#ff4b1f"/>
+            </svg>
+          </div>
+          <p class="plate-kicker">概念 05</p>
+          <h3>剪辑</h3>
+          <p>画面以切口向前。叙事短，落点清楚。</p>
+          <p class="concept">抽象概念，非案例、非成员、非活动</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="growth" data-reveal aria-labelledby="growth-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="index-no">04 — 理念</p>
+          <h2 id="growth-title">先看见成员。</h2>
+        </header>
+        <p class="growth-lead">LANP 重视每一位成员。品质是一起遵守的标准，创新是可以试错的余地。创造力与激情需要被放在合适的位置上。</p>
+        <ol class="keywords">
+          <li>热爱</li>
+          <li>品质</li>
+          <li>创新</li>
+          <li>共创</li>
+        </ol>
+        <svg class="gather" viewBox="0 0 800 140" aria-hidden="true">
+          <path d="M100 8 L400 132" pathLength="1"/>
+          <path d="M300 8 L400 132" pathLength="1"/>
+          <path d="M500 8 L400 132" pathLength="1"/>
+          <path d="M700 8 L400 132" pathLength="1"/>
+        </svg>
+        <div class="gather-dot" aria-hidden="true"></div>
+        <div class="core-beam" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <div class="split">
+      <section class="split-pane" id="join" aria-labelledby="join-title">
+        <p class="index-no">05 — 加入</p>
+        <h2 id="join-title">加入我们</h2>
+        <p class="deck">想在重视成员的公会里持续创作，可以从这里认识加入的方式。</p>
+        <div class="notice">
+          <strong>联系方式待补充</strong>
+          <p>对外邮箱、微信或入会渠道尚未提供。确认后会直接写在这里。现在没有报名表，本页也不收集个人信息。</p>
+        </div>
+        <a class="cross-link" href="#partner">商务合作是另一条渠道</a>
+      </section>
+      <section class="split-pane" id="partner" aria-labelledby="partner-title">
+        <p class="index-no">06 — 合作</p>
+        <h2 id="partner-title">商务合作</h2>
+        <p class="deck">内容合作与商务沟通使用单独的渠道，不和加入公会混在一起。</p>
+        <div class="notice">
+          <strong>联系方式待补充</strong>
+          <p>商务邮箱与对接人尚未提供。确认后会单独公布。这里不接收合作需求，也没有可发送的表单。</p>
+        </div>
+        <a class="cross-link" href="#join">加入公会请看这里</a>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="brand">LANP<span aria-hidden="true">.</span></p>
+        <p class="footer-name">LANP 文化传媒有限公司</p>
+        <p>中国 · 四川</p>
+        <p>成立于 2021 年</p>
+        <p class="muted">正式标志待补充</p>
+        <p class="muted">备案信息待补充</p>
+      </div>
+      <nav aria-label="页脚导航">
+        <a href="#about">关于 LANP</a>
+        <a href="#create">内容与创作</a>
+        <a href="#works">视觉概念</a>
+        <a href="#growth">成员成长</a>
+        <a href="#join">加入我们</a>
+        <a href="#partner">商务合作</a>
+      </nav>
+      <div class="footer-links">
+        <a href="privacy.html">隐私说明</a>
+        <a href="credits.html">视觉说明</a>
+        <a href="#top">返回顶部</a>
       </div>
     </div>
-  </section>
-  <section class="section content-section ground-surface" id="content" aria-labelledby="content-h">
-    <div class="wrap">
-      <div class="section-head section-head--row"><h2 id="content-h">内容有不同表达，<br>热爱有共同回响。</h2><p>在娱乐中相遇，<br>在文化中看见更多。</p></div>
-      <div class="grid content-grid">
-        <article class="span-6 content-item"><div class="content-item__text"><h3>娱乐内容</h3><p>以创作回应热爱，用多元内容连接用户。</p></div><a class="photo-link frame frame--photo" href="#contact" aria-label="了解娱乐内容合作"><img class="frame__img" src="assets/img/crowd.webp" srcset="assets/img/crowd-480.webp 480w, assets/img/crowd-720.webp 720w, assets/img/crowd.webp 1200w" sizes="(max-width:639px) calc(100vw - 48px), (max-width:1023px) calc((100vw - 120px) / 2), calc((100vw - 184px) / 2)" alt="音乐现场的观众随着演出举手互动" width="1200" height="800" loading="lazy" decoding="async" data-source="library" data-subject="entertainment"></a></article>
-        <article class="span-6 content-item"><div class="content-item__text"><h3>文化表达</h3><p>保留创作的个性，也认真对待每一个细节。</p></div><a class="photo-link frame frame--photo" href="#contact" aria-label="了解文化内容合作"><img class="frame__img" src="assets/img/studio.webp" srcset="assets/img/studio-480.webp 480w, assets/img/studio-720.webp 720w, assets/img/studio.webp 1200w" sizes="(max-width:639px) calc(100vw - 48px), (max-width:1023px) calc((100vw - 120px) / 2), calc((100vw - 184px) / 2)" alt="音乐制作设备、调音台与墙上的吉他" width="1200" height="800" loading="lazy" decoding="async" data-source="library" data-subject="music-production"></a></article>
-      </div>
+    <div class="wrap footer-bar">
+      <p>© 2026 LANP 文化传媒有限公司</p>
+      <p>文化传媒公会</p>
     </div>
-  </section>
-  <section class="section belief-section" id="belief" data-moment="word-highlight" aria-labelledby="belief-h">
-    <div class="wrap">
-      <div class="section-head"><h2 id="belief-h">公会的中心，<br>始终是成员。</h2></div>
-      <p class="mo-wh__text belief-statement">我们重视 <strong>每一位成员</strong> 的表达，<br>在共同创作中，<br>把内容 做得更好。</p>
-      <div class="grid belief-grid"><div class="span-4"><h3>品质</h3><p>认真对待内容，也认真对待每一次呈现。</p></div><div class="span-4"><h3>创新</h3><p>保持创造力与好奇心，尝试不同的表达。</p></div><div class="span-4"><h3>共创</h3><p>以成员为中心，让共同的热爱继续生长。</p></div></div>
-    </div>
-  </section>
-</main>
-<footer class="footer closing footer-columns ground-inverse" id="contact" aria-labelledby="contact-h">
-  <div class="wrap">
-    <div class="closing__cta close--type contact-top">
-      <div class="section-head"><h2 id="contact-h">与 LANP 一起创作。</h2><p>合作交流，或成为我们的一员。</p></div>
-      <details class="contact-details"><summary class="btn btn--primary btn--xl">查看联系渠道<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></summary><div class="contact-notice"><p>联系方式待补充</p><p>合作邮箱、微信及入会渠道将在确认后公布。</p></div></details>
-    </div>
-    <div class="closing__links">
-      <div class="grid footer-directory">
-        <div class="span-6"><a class="footer__mark brand" href="#top"><span class="brand__name">LANP<span class="brand__dot">.</span></span></a><p class="footer-company">LANP 文化传媒有限公司</p><p class="footer-location">中国 · 四川</p></div>
-        <div class="span-3 footer__col"><h3>认识 LANP</h3><ul><li><a href="#about">关于公会</a></li><li><a href="#content">内容方向</a></li><li><a href="#belief">公会理念</a></li></ul></div>
-        <div class="span-3 footer__col"><h3>联系与加入</h3><p>联系方式待补充</p><p class="footer-note">期待与你相遇。</p></div>
-      </div>
-      <div class="footer__legal"><span>© 2026 LANP 文化传媒</span><a href="privacy.html">隐私说明</a><details class="credits"><summary>摄影素材来源</summary><p>本页摄影素材来自 Unsplash，用于内容方向的视觉表达。<a href="credits.html">查看素材来源与许可</a></p></details><a href="#top">返回首页 ↑</a></div>
-    </div>
-  </div>
-</footer>
-<script src="assets/vendor/gsap.min.js" defer></script>
-<script type="module" src="assets/system.js"></script>
-<script type="module" src="assets/layout/layout.js"></script>
-<script type="module" src="assets/motion/motion.js"></script>
-<script type="module" src="app.js"></script>
+  </footer>
+  <script type="module" src="app.js"></script>
 </body>
 </html>
