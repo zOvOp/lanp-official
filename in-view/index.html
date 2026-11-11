@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="LANP 作品档案。把作品、创作自述与联络方式整理成可以分享的一页。" />
+    <title>IN VIEW.｜LANP 作品档案</title>
+    <link rel="icon" type="image/svg+xml" href="./mark.svg" />
+    <style>
+      #lanp-opening{position:fixed;inset:0;z-index:20;display:grid;place-items:center;background:#f07830;color:#fff;pointer-events:none;clip-path:polygon(0 0,100% 0,100% 100%,0 100%);transition:clip-path 720ms cubic-bezier(.16,1,.3,1);animation:lanp-opening-safety 1ms 3s forwards}
+      #lanp-opening svg{width:76px;height:76px;transition:transform 720ms cubic-bezier(.16,1,.3,1),opacity 320ms}
+      #lanp-opening path{stroke-dasharray:1;stroke-dashoffset:1;animation:lanp-trace 590ms cubic-bezier(.16,1,.3,1) forwards}
+      #lanp-opening path+path{animation-delay:95ms}
+      [data-lanp-entered] #lanp-opening{clip-path:polygon(0 0,100% 0,100% 0,0 0)}
+      [data-lanp-entered] #lanp-opening svg{transform:translateY(-55px) scale(.85);opacity:0}
+      @keyframes lanp-trace{to{stroke-dashoffset:0}}
+      @keyframes lanp-opening-safety{to{visibility:hidden}}
+      @media(prefers-reduced-motion:reduce){#lanp-opening{display:none}}
+    </style>
+  </head>
+  <body>
+    <div id="lanp-opening" aria-hidden="true">
+      <svg viewBox="0 0 76 76" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round">
+        <path pathLength="1" d="M16 14v47h46V48H30V14Z" />
+        <path pathLength="1" d="M30 14h12v23h20v11M16 61l14-13" />
+      </svg>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

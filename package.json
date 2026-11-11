@@ -5,8 +5,8 @@
   "description": "LANP 文化传媒有限公司官网",
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs",
-    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs && npm --prefix in-view run build -- --mode pages",
+    "dev": "npm --prefix in-view run dev",
     "preview": "node scripts/serve.mjs --dist",
     "check": "node scripts/check.mjs && node --test scripts/stage-mode.test.mjs"
   },

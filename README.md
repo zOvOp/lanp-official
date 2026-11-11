@@ -1,28 +1,29 @@
 # LANP 文化传媒官网
 
-LANP 文化传媒有限公司的中文品牌站。静态页面，无后端、无表单提交。首屏在桌面端按需绘制 WebGL 光环，手机、弱设备、系统减少动效或图形不可用时，回退到同一套矢量舞台。
+LANP 文化传媒有限公司的中文品牌站。React 首页源码位于 `in-view/`。桌面首屏用 WebGL 绘制作品卡片，系统减少动效偏好和站内暂停按钮可停用动态效果。作品档案在浏览器中生成和导出。
 
 ## 本地预览
 
 需要 Node.js 22 或更新版本。
 
 ```sh
+npm ci --prefix in-view
 npm run check
 npm run dev
 ```
 
-打开 http://127.0.0.1:4173 。同一服务也接受 GitHub Pages 子路径 http://127.0.0.1:4173/lanp-official/ 。
+打开 http://127.0.0.1:4173 。
 
 ```sh
 npm run build
 npm run preview
 ```
 
-`preview` 查看 `dist/`。
+`preview` 查看 `dist/`，也支持 GitHub Pages 子路径 http://127.0.0.1:4173/lanp-official/ 。
 
 ## 部署
 
-`.github/workflows/pages.yml` 在推送到 `main` 后，用最小权限构建 `dist/` 并发布到 GitHub Pages。仓库若是私有项目，Pages 可能需要公开仓库或付费方案，工作流本身不会绕过这个限制。
+`.github/workflows/pages.yml` 在推送到 `main` 后安装锁定的依赖、构建 `dist/` 并发布到 GitHub Pages。构建会保留隐私页、版权说明和 404 页等静态文件。
 
 预期项目地址：https://zovop.github.io/lanp-official/
 
